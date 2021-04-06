@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gdufe.crm.workbench.dao.TranDao">
+
+    <insert id="save">
+        insert into tbl_tran(
+            id,
+            owner,
+            money,
+            name,
+            expectedDate,
+            customerId,
+            stage,
+            type,
+            source,
+            activityId,
+            contactsId,
+            createBy,
+            createTime,
+            editBy,
+            editTime,
+            description,
+            contactSummary,
+            nextContactTime
+
+        )
+        values (
+            #{id},
+            #{owner},
+            #{money},
+            #{name},
+            #{expectedDate},
+            #{customerId},
+            #{stage},
+            #{type},
+            #{source},
+            #{activityId},
+            #{contactsId},
+            #{createBy},
+            #{createTime},
+            #{editBy},
+            #{editTime},
+            #{description},
+            #{contactSummary},
+            #{nextContactTime}
+
+        )
+    </insert>
+
+    <select id="detail" resultType="com.gdufe.crm.workbench.domain.Tran">
+        select
+
+            tran.id,
+            user.name as owner,
+            tran.money,
+            tran.name,
+            tran.expectedDate,
+            customer.name as customerId,
+            tran.stage,
+            tran.type,
+            tran.source,
+            activity.name as activityId,
+            con.fullname as contactsId,
+            tran.createBy,
+            tran.createTime,
+            tran.editBy,
+            tran.editTime,
+            tran.description,
+            tran.contactSummary,
+            tran.nextContactTime
+
+
+        from tbl_tran tran
+        join tbl_user user
+        on tran.owner=user.id
+        join tbl_customer customer
+        on tran.customerId=customer.id
+        left join tbl_activity activity
+        on tran.activityId=activity.id
+        left join tbl_contacts con
+        on tran.contactsId=con.id
+
+
+        where tran.id=#{id}
+    </select>
+    
+    <update id="changeStage">
+        update tbl_tran set stage=#{stage},editBy=#{editBy},editTime=#{editTime}
+        where id=#{id}
+    </update>
+    
+    <select id="getTotal" resultType="int">
+        select count(*) from tbl_tran
+    </select>
+
+    <select id="getCharts" resultType="map">
+        select
+        count(*) as value,stage as name
+        from tbl_tran
+        group by stage
+    </select>
+
+    <select id="getPage" resultType="com.gdufe.crm.workbench.domain.Tran">
+        select
+
+        t.id,
+        u.name as owner,
+        t.name,
+        cus.name as customerId,
+        t.stage,
+        t.type,
+        t.source,
+        con.fullname as contactsId
+
+        from tbl_tran t
+        join tbl_user u
+        on t.owner=u.id
+        join tbl_customer cus
+        on t.customerId=cus.id
+        join tbl_contacts con
+        on t.contactsId=con.id
+
+        <where>
+            <if test="owner!=null and owner!=''">
+                u.name like '%' #{owner} '%'
+            </if>
+            <if test="name!=null and name!=''">
+                t.name like '%' #{name} '%'
+            </if>
+            <if test="customerId!=null and customerId!=''">
+                cus.name like '%' #{customerId} '%'
+            </if>
+            <if test="stage!=null and stage!=''">
+                t.stage like '%' #{stage} '%'
+            </if>
+            <if test="type!=null and type!=''">
+                t.type like '%' #{type} '%'
+            </if>
+            <if test="source!=null and source!=''">
+                t.source like '%' #{source} '%'
+            </if>
+            <if test="contactsId!=null and contactsId!=''">
+                con.fullname like '%' #{contactsId} '%'
+            </if>
+        </where>
+    </select>
+
+    <update id="update">
+        update tbl_tran
+        set
+
+        owner=#{owner},
+        activityId=#{activityId},
+        contactsId=#{contactsId},
+        money=#{money},
+        name=#{name},
+        expectedDate=#{expectedDate},
+        customerId=#{customerId},
+        stage=#{stage},
+        type=#{type},
+        source=#{source},
+        createBy=#{createBy},
+        createTime=#{createTime},
+        editBy=#{editBy},
+        editTime=#{editTime},
+        description=#{description},
+        contactSummary=#{contactSummary},
+        nextContactTime=#{nextContactTime}
+
+        where id=#{id}
+
+    </update>
+
+    <delete id="delete">
+        delete from tbl_tran where id=#{id}
+    </delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

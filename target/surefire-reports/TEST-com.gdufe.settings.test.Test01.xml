@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.gdufe.settings.test.Test01" time="2.446" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\JavaProject\CRMProjectWorkSpace\CRM\target\test-classes;D:\JavaProject\CRMProjectWorkSpace\CRM\target\classes;D:\Java\repository\junit\junit\4.11\junit-4.11.jar;D:\Java\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Java\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;D:\Java\repository\javax\servlet\jsp\jsp-api\2.1.3-b06\jsp-api-2.1.3-b06.jar;D:\Java\repository\org\glassfish\javax.servlet\3.0-b70\javax.servlet-3.0-b70.jar;D:\Java\repository\javax\el\el-api\2.1.2-b05\el-api-2.1.2-b05.jar;D:\Java\repository\org\springframework\spring-webmvc\5.2.5.RELEASE\spring-webmvc-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-aop\5.2.5.RELEASE\spring-aop-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-context\5.2.5.RELEASE\spring-context-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-expression\5.2.5.RELEASE\spring-expression-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-tx\5.3.1\spring-tx-5.3.1.jar;D:\Java\repository\org\springframework\spring-jdbc\5.3.1\spring-jdbc-5.3.1.jar;D:\Java\repository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;D:\Java\repository\org\mybatis\mybatis-spring\2.0.3\mybatis-spring-2.0.3.jar;D:\Java\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;D:\Java\repository\com\fasterxml\jackson\core\jackson-core\2.9.0\jackson-core-2.9.0.jar;D:\Java\repository\com\fasterxml\jackson\core\jackson-databind\2.9.0\jackson-databind-2.9.0.jar;D:\Java\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\Java\repository\mysql\mysql-connector-java\8.0.21\mysql-connector-java-8.0.21.jar;D:\Java\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;D:\Java\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Java\repository\com\alibaba\druid\1.2.3\druid-1.2.3.jar;D:\Java\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\Java\repository\org\springframework\spring-web\5.2.5.RELEASE\spring-web-5.2.5.RELEASE.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\Java\jdk-15.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Spidey\AppData\Local\Temp\surefire2666062773656090724\surefirebooter8899835772451233733.jar C:\Users\Spidey\AppData\Local\Temp\surefire2666062773656090724 2021-04-04T09-56-29_440-jvmRun1 surefire16128268153787594700tmp surefire_014408666561542593715tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\JavaProject\CRMProjectWorkSpace\CRM\target\test-classes;D:\JavaProject\CRMProjectWorkSpace\CRM\target\classes;D:\Java\repository\junit\junit\4.11\junit-4.11.jar;D:\Java\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Java\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar;D:\Java\repository\javax\servlet\jsp\jsp-api\2.1.3-b06\jsp-api-2.1.3-b06.jar;D:\Java\repository\org\glassfish\javax.servlet\3.0-b70\javax.servlet-3.0-b70.jar;D:\Java\repository\javax\el\el-api\2.1.2-b05\el-api-2.1.2-b05.jar;D:\Java\repository\org\springframework\spring-webmvc\5.2.5.RELEASE\spring-webmvc-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-aop\5.2.5.RELEASE\spring-aop-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-context\5.2.5.RELEASE\spring-context-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-expression\5.2.5.RELEASE\spring-expression-5.2.5.RELEASE.jar;D:\Java\repository\org\springframework\spring-tx\5.3.1\spring-tx-5.3.1.jar;D:\Java\repository\org\springframework\spring-jdbc\5.3.1\spring-jdbc-5.3.1.jar;D:\Java\repository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;D:\Java\repository\org\mybatis\mybatis-spring\2.0.3\mybatis-spring-2.0.3.jar;D:\Java\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;D:\Java\repository\com\fasterxml\jackson\core\jackson-core\2.9.0\jackson-core-2.9.0.jar;D:\Java\repository\com\fasterxml\jackson\core\jackson-databind\2.9.0\jackson-databind-2.9.0.jar;D:\Java\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\Java\repository\mysql\mysql-connector-java\8.0.21\mysql-connector-java-8.0.21.jar;D:\Java\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;D:\Java\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Java\repository\com\alibaba\druid\1.2.3\druid-1.2.3.jar;D:\Java\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\Java\repository\org\springframework\spring-web\5.2.5.RELEASE\spring-web-5.2.5.RELEASE.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Spidey"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="D:\Java\jdk-15.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\JavaProject\CRMProjectWorkSpace\CRM"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Spidey\AppData\Local\Temp\surefire2666062773656090724\surefirebooter8899835772451233733.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="user.name" value="Spidey"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Java\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Spidey\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.2.4"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="D:\JavaProject\CRMProjectWorkSpace\CRM"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Linux\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Java\jdk-15.0.1\bin;D:\Polyspace\R2020a\runtime\win64;D:\Polyspace\R2020a\bin;D:\Polyspace\R2020a\polyspace\bin;D:\Java\apache-maven-3.6.3\bin;D:\Java\apache-maven-3.6.3\bin;D:\nodejs\;D:\Git\Git\cmd;D:\Linux\Xshell 7\;D:\Linux\Xftp 7\;D:\Python38-32\Scripts\;D:\Python38-32\;C:\Users\Spidey\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Spidey\AppData\Local\Programs\Python\Python38-32\;C:\Users\Spidey\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;D:\JetBrains\IntelliJ IDEA 2020.2.1\bin;;D:\VS Code\bin;D:\MySql\mysql-8.0.21-winx64\bin;C:\Users\Spidey\AppData\Roaming\npm;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="D:\Java\repository"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="Test_01" classname="com.gdufe.settings.test.Test01" time="2.39"/>
+</testsuite>

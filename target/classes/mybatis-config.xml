@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <!--设置别名-->
+  <typeAliases>
+    <!--name:实体类所在的包名-->
+    <package name="com.gdufe.crm.settings.domain,com.gdufe.crm.workbench.domain"/>
+  </typeAliases>
+
+  <mappers>
+    <!--name:是包名，这个包中的所有mapper.xml一次都能加载-->
+    <package name="com.gdufe.crm.settings.dao,com.gdufe.crm.workbench.dao"/>
+  </mappers>
+</configuration>
